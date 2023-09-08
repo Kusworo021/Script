@@ -4,7 +4,7 @@
 脚本兼容: Surge4.7, QuanX1.0.22(545+), Loon2.1.10(290+)
 捷径地址: https://www.icloud.com/shortcuts/0f5b9a825cad47488a78ff2876b822dd
 
-脚本配置:
+脚本配:KUSWO
 -----------Surge------------
 [Script]
 捷径策略切换 = type=http-request,pattern=^http:\/\/nobyda\.policy,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Shortcuts/PolicySwitch.js
@@ -47,7 +47,7 @@ function nobyda() {
 			})
 		}
 		if (isLoon) {
-			const getName = JSON.parse($config.getConfig());
+			const getName = KUSWO.parse($config.getConfig());
 			return getName['all_policy_groups'];
 		}
 		if (isQuanX) {
